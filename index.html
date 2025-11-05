@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CafeNetwork | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffb6c1, #fff);
+      color: #222;
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 4rem;
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #ff4081;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff4081;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      margin: 8rem 2rem 4rem;
+      padding: 4rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      color: #ff4081;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    .ip-box {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .ip {
+      background: rgba(255, 255, 255, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 1rem 2rem;
+      font-weight: 600;
+      color: #222;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .ip:hover {
+      background: rgba(255, 255, 255, 0.7);
+      transform: scale(1.05);
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(15px);
+      padding: 2rem;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    .feature-card h3 {
+      color: #ff4081;
+      margin-bottom: 0.8rem;
+    }
+
+    footer {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    footer p {
+      color: #333;
+      font-size: 0.9rem;
+    }
+
+    .cta {
+      background: #ff4081;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
+    }
+
+    .cta:hover {
+      background: #ff5f99;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 1rem 2rem;
+      }
+      header h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">CafeNetwork</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="https://store.cafenetwork.xyz" target="_blank">Store</a></li>
+      <li><a href="https://discord.gg/KTkq6ryE2U" target="_blank">Discord</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <h1>Welcome to CafeNetwork</h1>
+    <p>The cozy, community-driven Minecraft experience where fun never stops. Join today and start your journey!</p>
+    <div class="ip-box">
+      <div class="ip">play.cafenetwork.xyz</div>
+      <div class="ip">cafenetwork.minehut.gg</div>
+    </div>
+    <br>
+    <a href="https://store.cafenetwork.xyz" target="_blank"><button class="cta">Join the Fun</button></a>
+  </header>
+
+  <section>
+    <h2 style="text-align:center; color:#ff4081; margin-bottom:2rem; font-size:2rem;">Why Play on CafeNetwork?</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>🌸 Community First</h3>
+        <p>We’ve built a friendly, welcoming community that feels like home. Whether you’re here to chill or compete, everyone fits in.</p>
+      </div>
+      <div class="feature-card">
+        <h3>💎 Custom Gameplay</h3>
+        <p>Experience exclusive systems like jobs, crates, homes, quests, and events — all fine-tuned for your enjoyment.</p>
+      </div>
+      <div class="feature-card">
+        <h3>☕ Frequent Updates</h3>
+        <p>Our developers constantly add new features, improve performance, and ensure every update keeps things exciting.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 CafeNetwork — All Rights Reserved</p>
+    <p><a href="https://discord.gg/KTkq6ryE2U" target="_blank" style="color:#ff4081; text-decoration:none; font-weight:600;">Join Our Discord</a></p>
+  </footer>
+</body>
+</html>
